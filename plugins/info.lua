@@ -2,7 +2,7 @@
 Add phone by : @WaderTGTeam tnx to : @WaderTGTeam
 ]]
 do
-local sudo = 136888679 --put your id here(BOT OWNER ID)
+local sudo = 307494481 --put your id here(BOT OWNER ID)
 
 local function setrank(msg, name, value) -- setrank function
   local hash = nil
@@ -127,7 +127,7 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
   local um_hash = 'msgs:'..result.from.peer_id..':'..result.to.peer_id
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'تعداد پیام های فرستاده شده : '..user_info_msgs..'\n\n'
-  text = text..'@WaderTGTeam'
+  text = text..'@sudo_star'
   send_msg(extra.receiver, text, ok_cb, true)
 end
 
